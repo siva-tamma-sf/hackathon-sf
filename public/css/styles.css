@@ -1,0 +1,19 @@
+/*
+* Header css
+*/
+.header {
+  position: fixed;
+  width: 100%;
+}
+
+.container {
+  padding-top: 80px;
+}
+
+#spinner {
+  margin-top: 40px;
+}
+
+#hackathon-wrapper {
+  width: 60%;
+}

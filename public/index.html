@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hackathon</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+
+  </head>
+
+  <body>
+    <div
+      class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm header"
+    >
+      <h5 class="my-0 mr-md-auto font-weight-normal">Hackathon</h5>
+      <nav class="my-2 my-md-0 mr-md-3"></nav>
+    </div>
+    <div class="container">
+      <div class="row content" id="rowContent">
+        <div id="hackathon-wrapper">
+          <div id="hackathon-form">
+            <form>
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-4 col-form-label">Team Name:</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="teamName" aria-describedby="Team Name Help" placeholder="Team Name:">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="Paticipants" class="col-sm-4 col-form-label">Paticipants</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="paticipants" placeholder="Paticipants">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="teamSizeLimit" class="col-sm-4 col-form-label">Cloud</label>
+                <div class="col-sm-8">
+                <select class="form-control" id="cloud">
+                  <option>Techonlogy</option>
+                  <option>Customer Focused</option>
+                </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="Location" class="col-sm-4 col-form-label">Location</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="location" placeholder="Location">
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary" onclick="salesforce.hackathon.registerTeam();">Create Team</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="modal-container"></div>
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
