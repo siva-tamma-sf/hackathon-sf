@@ -1,10 +1,10 @@
 # hackathon-sf
 
-Install the packages
+Install the packages:
 npm i
 
-Run the code
+Run the code:
 node app
 
-Open Browser
+Open Browser:
 http://localhost:5000/
